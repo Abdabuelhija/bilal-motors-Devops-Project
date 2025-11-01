@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: abedabu28/backend-chart
+  repository: abedabu28/bilal-motors-backend
   tag: "1.0"
   pullPolicy: IfNotPresent
 

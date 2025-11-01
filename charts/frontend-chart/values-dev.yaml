@@ -1,5 +1,5 @@
 backend:
-  image: "abedabu28/bilal-backend:1.0"
+  image: "abedabu28/bilal-motors-backend:1.0"
   replicas: 1
   port: 8000
   env:
@@ -7,7 +7,7 @@ backend:
     ORIGIN: "http://bilal.local"
 
 frontend:
-  image: "abedabu28/bilal-frontend:1.0"
+  image: "abedabu28/bilal-motors-frontend:1.0"
   replicas: 1
   port: 80
 
