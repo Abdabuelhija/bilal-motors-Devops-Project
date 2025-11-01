@@ -1,0 +1,25 @@
+replicaCount: 1
+
+image:
+  repository: abedabu28/bilal-motors-backend
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+containerPort: 8000
+
+service:
+  type: ClusterIP
+  port: 8000
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: api.bilal-motors.local
+      path: /
+  tls: []   # مثال: - secretName: backend-tls  hosts: [api.example.com]
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}

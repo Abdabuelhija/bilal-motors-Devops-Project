@@ -1,0 +1,15 @@
+#root{
+width: 100%;
+margin: auto;
+}
+.Nav{
+    position: fixed;
+    width: 100%;
+}
+
+.RoutesStyle{
+    margin-top:60px;
+    margin-left:20px;
+    /* margin: auto; */
+}
+

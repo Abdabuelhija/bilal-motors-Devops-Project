@@ -1,0 +1,84 @@
+div.modal-content {
+  border-radius: 1px;
+  margin-top: 50px;
+  width: 150%;
+}
+div.modal.show{
+  padding-right:200px;
+}
+div.modal-header {
+  border-bottom: none;
+}
+div.modal-footer {
+  border-top: none;
+}
+
+.btn.btn-primary {
+  --bs-btn-bg: green;
+  --bs-btn-border-color: green;
+  --bs-btn-hover-bg: rgb(3, 101, 3);
+  --bs-btn-hover-border-color: rgb(3, 101, 3);
+}
+.btn.btn-secondary {
+  --bs-btn-bg: rgb(146, 146, 146);
+  --bs-btn-border-color: rgb(146, 146, 146);
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  width: 90%; 
+  max-width: 1000px; 
+  margin: 100px auto;
+}
+
+.orginal-button,
+.Entrance-button,
+.Add-car {
+  flex: 1 0 20%; 
+  margin: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.orginal-button{
+  background-color: #1C5F8C;
+}
+.Entrance-button{
+  background-color: #000000;
+}
+.Add-car{
+  background-color: green;
+}
+
+.orginal-button:hover{
+  background-color:#1b4e70;
+}
+.Entrance-button:hover{
+  background-color: #0a1b27;
+}
+
+@media screen and (max-width: 768px) {
+  .orginal-button,
+  .Entrance-button,
+  .Add-car {
+    flex: 1 0 40%; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .orginal-button,
+  .Entrance-button,
+  .Add-car {
+    flex: 1 0 80%; 
+  }
+}
+
+
+
+

@@ -1,0 +1,29 @@
+replicaCount: 1
+
+image:
+  repository: YOUR_DOCKER_USERNAME/bilal-motors-frontend
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+containerPort: 3000
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: bilal-motors.local
+      path: /
+  tls: []   # مثال: - secretName: frontend-tls  hosts: [bilal-motors.example.com]
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+# بيئة الواجهة (عدّل بما يناسب مشروعك)
+config:
+  VITE_API_URL: "http://api.bilal-motors.local"

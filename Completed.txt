@@ -1,0 +1,12 @@
+1.build image
+docker build -t bilal-motors-frontend:1.0 .
+docker build -t bilal-motors-backend:1.0 .
+2. Push an Image to Docker Hub:
+
+docker tag bilal-motors-frontend:1.0 abedabu28/bilal-motors-frontend:1.0
+docker push abedabu28/bilal-motors-frontend:1.0
+
+docker tag bilal-motors-backend:1.0 abedabu28/bilal-motors-backend:1.0
+docker push abedabu28/bilal-motors-backend:1.0
+
+3.helm create ..

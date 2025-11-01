@@ -1,0 +1,15 @@
+backend:
+  image: "abedabu28/bilal-backend:1.0"
+  replicas: 1
+  port: 8000
+  env:
+    BASE_URL: "http://bilal.local"
+    ORIGIN: "http://bilal.local"
+
+frontend:
+  image: "abedabu28/bilal-frontend:1.0"
+  replicas: 1
+  port: 80
+
+ingress:
+  host: "bilal.local"

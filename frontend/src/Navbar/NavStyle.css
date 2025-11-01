@@ -1,0 +1,30 @@
+
+.MDBNavbar {
+    display: flex;
+    align-items: center; 
+  }
+
+  .nav-link.ml-auto {
+    float: right;
+    margin-right: 30px;
+  }
+  
+  .NavLogo {
+    width: 70px;
+  }
+  
+  button.navbar-toggler:hover{
+    border-color: white;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .nav-link.ml-auto {
+      float: none; 
+      margin: auto;
+    }
+    .NavLogo {
+      /* float: none;  */
+      margin: auto;
+    }
+  }
+  

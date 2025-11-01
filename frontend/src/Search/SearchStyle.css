@@ -1,0 +1,59 @@
+.SearchFormDiv {
+  text-align: center;
+  width: 90%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+.SearchFormDiv .SearchForm input[type=text], 
+.SearchFormDiv .SearchForm input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.SearchFormDiv .SearchForm input[type=submit] {
+  background-color: #1C5F8C;
+  color: white;
+  padding-top: 3%;
+  border: none;
+  cursor: pointer;
+}
+
+.ResultDiv {
+  background-color: #e9e9e9;
+  margin-right: 10px;
+}
+
+.searchGridBody {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* make grid columns responsive */
+  gap: 20px; /* create some space between the grid cells */
+}
+
+.ResultDiv .Cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* make grid columns responsive */
+  gap: 20px; /* create some space between the grid cells */
+  margin: 40px auto; /* center grid on page */
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 1366px) {
+  .FormDiv {
+    border-radius:100px;
+    padding: 10px;
+    width: 80%; /* make width responsive */
+    max-width: 600px; /* set a max-width */
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    padding-top:40px;
+    margin-bottom: 100px;
+    border: 6px solid;
+    border-color: #702C77;
+    box-shadow: 0px 0px 4px 4px #1C5F8C;
+  }
+}

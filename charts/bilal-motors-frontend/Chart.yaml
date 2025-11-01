@@ -1,0 +1,6 @@
+apiVersion: v2
+name: bilal-motors-frontend
+description: Helm chart for Bilal Motors frontend (React/Vite)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
