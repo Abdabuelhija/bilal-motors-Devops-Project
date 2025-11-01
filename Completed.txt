@@ -9,4 +9,7 @@ docker push abedabu28/bilal-motors-frontend:1.0
 docker tag bilal-motors-backend:1.0 abedabu28/bilal-motors-backend:1.0
 docker push abedabu28/bilal-motors-backend:1.0
 
-3.helm create ..
+3.helm create bilal-motors-backend
+helm create bilal-motors-frontend
+
+4-

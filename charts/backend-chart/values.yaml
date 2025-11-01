@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: abedabu28/bilal-motors-backend
-  tag: "latest"
+  repository: abedabu28/backend-chart
+  tag: "1.0"
   pullPolicy: IfNotPresent
 
 containerPort: 8000
@@ -17,7 +17,7 @@ ingress:
   hosts:
     - host: api.bilal-motors.local
       path: /
-  tls: []   # مثال: - secretName: backend-tls  hosts: [api.example.com]
+  tls: []
 
 resources: {}
 nodeSelector: {}

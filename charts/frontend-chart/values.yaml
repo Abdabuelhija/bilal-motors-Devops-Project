@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: YOUR_DOCKER_USERNAME/bilal-motors-frontend
+  repository: YOUR_DOCKER_USERNAME/frontend-chart
   tag: "latest"
   pullPolicy: IfNotPresent
 

@@ -23,7 +23,6 @@ spec:
                 name: {{ include "backend.fullname" . }}-config
             - secretRef:
                 name: {{ include "backend.fullname" . }}-secret
-          # فحوصات بسيطة (يمكن تعديل المسارات لاحقاً)
           readinessProbe:
             tcpSocket:
               port: {{ .Values.containerPort }}

@@ -19,7 +19,7 @@ bilal motors devops/
         package.json
         package-lock.json
     charts/
-        bilal-motors-backend/
+        backend-chart/
             templates/
                 tests/
                     test-connection.yaml
@@ -33,7 +33,7 @@ bilal motors devops/
             Chart.yaml
             values.yaml
             values-dev.yaml
-        bilal-motors-frontend/
+        frontend-chart/
             templates/
                 tests/
                     test-connection.yaml
