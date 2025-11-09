@@ -1,2 +1,6 @@
 frontend : npm run dev 
-backend : nodemon index.js 
+backend : nodemon index.js
+
+should run this to make sure its works :
+kubectl -n default port-forward svc/backend-release-backend-chart 8000:8000
+kubectl -n default port-forward svc/frontend-release-frontend 3000:80

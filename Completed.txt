@@ -14,3 +14,7 @@ helm create bilal-motors-frontend
 
 4- run :
 helm upgrade -i backend-release "charts/backend-chart" --values "charts/backend-chart/values.yaml"
+helm upgrade -i frontend-release "charts/frontend-chart" --values "charts/frontend-chart/values.yaml"
+
+-kubectl -n default port-forward svc/backend-release-backend-chart 8000:8000
+- kubectl -n default port-forward svc/frontend-release-frontend 3000:80

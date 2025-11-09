@@ -18,9 +18,9 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.containerPort }}
-          envFrom:
-            - configMapRef:
-                name: {{ include "frontend.fullname" . }}-config
+#          envFrom:
+#            - configMapRef:
+#                name: {{ include "frontend.fullname" . }}-config
           readinessProbe:
             tcpSocket:
               port: {{ .Values.containerPort }}
