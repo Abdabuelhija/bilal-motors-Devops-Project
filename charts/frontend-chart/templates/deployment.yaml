@@ -21,6 +21,18 @@ spec:
 #          envFrom:
 #            - configMapRef:
 #                name: {{ include "frontend.fullname" . }}-config
+#          chat gave me that to enable paths like http://localhost:3000/Sold
+#          volumeMounts:
+#            - name: nginx-conf
+#              mountPath: /etc/nginx/nginx.conf
+#              subPath: nginx.conf
+#          volumes:
+#            - name: nginx-conf
+#              configMap:
+#                name: { { include "frontend.fullname" . } }-nginx
+#                items:
+#                    - key: nginx.conf
+#                      path: nginx.conf
           readinessProbe:
             tcpSocket:
               port: {{ .Values.containerPort }}
