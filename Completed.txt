@@ -20,5 +20,8 @@ kubectl -n default port-forward svc/backend-release-backend-chart 8000:8000
 kubectl -n default port-forward svc/frontend-release-frontend 3000:80
 
 5-
-kubectl apply -n argocd -f argocd/frontend-application.yaml
 kubectl apply -n argocd -f argocd/backend-application.yaml
+kubectl apply -n argocd -f argocd/frontend-application.yaml
+
+6-
+kubectl apply -f backend-servicemonitor.yaml
