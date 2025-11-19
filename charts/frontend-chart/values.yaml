@@ -12,18 +12,15 @@ service:
   port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   className: nginx
-  hosts:
-    - host: bilal-motors.local
-      path: /
-  tls: []   # مثال: - secretName: frontend-tls  hosts: [bilal-motors.example.com]
+  hosts: []
+  tls: []
 
 resources: {}
 nodeSelector: {}
 tolerations: []
 affinity: {}
 
-
 config:
-  VITE_API_URL: "http://api.bilal-motors.local"
+  VITE_API_URL: "http://localhost:8000"

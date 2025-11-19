@@ -7,24 +7,19 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-
   source:
-    # הריפו של הפרויקט שלך (כמו ששלחת)
     repoURL: 'https://github.com/Abdabuelhija/bilal-motors-devops-project'
     targetRevision: main
-
-    # כאן תשים את הנתיב לתיקיית ה-Helm chart של ה-backend
-    # לדוגמה: charts/backend-chart  או charts/backend
     path: charts/backend-chart
 
     helm:
       releaseName: backend-release
       valueFiles:
-        - values.yaml   # אם יש לך קובץ כזה ב-chart
+        - values.yaml
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: default   # או namespace אחר אם אתה משתמש בו
+    namespace: default
 
   syncPolicy:
     automated:

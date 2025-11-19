@@ -12,19 +12,16 @@ spec:
     repoURL: 'https://github.com/Abdabuelhija/bilal-motors-devops-project'
     targetRevision: main
 
-    # הנתיב לתיקיית ה-Helm chart של ה-frontend
     path: charts/frontend-chart
 
     helm:
       releaseName: frontend-release
       valueFiles:
         - values.yaml
-        # הוסף אם יש לך values-prod.yaml או values-dev.yaml
-        # - values-prod.yaml
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: default  # או namespace אחר אם יש
+    namespace: default
 
   syncPolicy:
     automated:
